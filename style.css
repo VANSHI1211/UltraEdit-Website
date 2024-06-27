@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    margin: 10px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
+.lists li {
+    /* margin:10px; */
+    padding-left: 4px;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.lists {
+    display: flex;
+    border: 2px solid white;
+    width: 80vw;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.lists>.L5>a {
+    text-transform: capitalize;
+    color: black;
+}
+
+.translator {
+    padding-right: 20px;
+    opacity: 1
+}
+
+.L1,
+.L2,
+.L3,
+.L4,
+.L5 {
+    opacity: 0.7;
+}
+
+a:active,
+a:visited,
+a:link,
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.dropdown {
+    margin: 4px;
+}
+
+.box {
+    margin-top: 6vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.heading {
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.heading>span {
+    font-weight: bold;
+    /* margin-left: 10px;
+    margin-right: 5px; */
+}
+
+.heading>img {
+    display: flex;
+    width: 110px;
+    height: 32px;
+    align-self: center;
+}
+
+.para>p {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    opacity: 0.75;
+    padding: 0;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.bluebox {
+    text-transform: uppercase;
+    background-color: rgba(4, 173, 211, 0.959);
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    width: 21vw;
+    height: 45px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    padding: 2px;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box .download>img {
+    height: 60px;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.box .download {
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Segoe UI';
+    margin-left: 25px;
+}
+
+.box .download>p {
+    display: flex;
+    align-self: center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.box .download>small {
+    display: flex;
+    align-self: center;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.download>small>a{
+    color:black;
+}
+
+.fixedcookie {
+    position: fixed;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
+.cookie {
+    background-color: rgb(41, 39, 39);
+    width: 120px;
+    color: white;
+    padding-top: 8px;
+    position: fixed;
+    margin-top: 9vh;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 12px;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+figure{
+    display: inline;
+    position: fixed;
+}
+
+.transition>svg{
+    display: inline;
+    z-index: 1;
+    background-color: rgb(0, 174, 255);
+    width: 55px;
+    height: 55px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    padding: 15px;
+    transition: all 1s ease-in-out;
+    animation: fadeInRight 2s cubic-bezier(.77,0,.175,1) 1 alternate-reverse;
+}
+
+@keyframes fadeInRight {
+    from{
+        opacity: 1;
+    }
+    to{
+        transform: translateX(30px);
+        opacity: 0.1;
+    }
+}
+
+.grids {
+    display: grid;
+    grid-template: repeat(4, 130px) / repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    justify-content: center;
+}
+
+.grids .lang {
+    font-style: none;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    background-color: rgb(248, 248, 252);
+    padding: 15px;
+    font-family: 'Segoe UI';
+}
+
+.grids .lang>small {
+    line-height: 2vw;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+}
+
+.btn{
+    border: none;
+}
+
+.blue{
+    background-color: rgba(4, 173, 211, 0.959);
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    font-family: 'Segoe UI';
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.green{
+    background-color: rgb(63, 138, 63);
+    padding: 7px;
+    margin-top: 22px;
+    /* margin-left: 6vw;
+    margin-right: 6vw; */
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    font-family: 'Segoe UI';
+    border-radius: 5px;
+}
+
+.blackbox {
+    background-color: rgb(31, 30, 30);
+    color: white;
+    margin-top: 13vh;
+    padding: 12vh;
+}
+
+.JoinSub {
+    display: flex;
+    justify-content: center;
+}
+
+.Join {
+    padding-right: 7vw;
+    padding-left: 8vw;
+    padding-top: 15vh;
+    text-align: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Join p {
+    line-height: 4vh;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.Subscribe {
+    background-color: white;
+    color: black;
+    margin-right: 10vw;
+    width: 40vw;
+    height: 43vh;
+    padding: 2vw;
+    padding-top: 3vw;
+    text-align: center;
+    margin-left: 10vw;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.Subscribe h3 {
+    color: rgb(0, 174, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.enter {
+    line-height: 2vw;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Subscribe .Email {
+    height: 7vh;
+    width: 18vw;
+}
+
+.signup {
+    background-color: rgb(0, 174, 255);
+    margin: 10px;
+    width: 18vw;
+    height: 7vh;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 2px rgb(190, 215, 226);
+    cursor: pointer;
+    margin-left: 19px;
+    color: white;
+}
+
+.para2 {
+    padding: 8vw;
+    line-height: 6vh;
+    padding-bottom: 0;
+}
+
+.para2 h3 {
+    font-size: x-large;
+}
+
+.para2 .p1,
+.p2,
+.p3 {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p3 {
+    line-height: 4vh;
+}
+
+.columns {
+    background-color: rgb(240, 240, 240);
+}
+
+.collists {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding-top: 7vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 15vw;
+    padding-right: 13vw;
+}
+
+.collist1,
+.collist2,
+.collist3,
+.collist4 {
+    list-style: none;
+}
+
+h4 {
+    padding-bottom: 20px;
+}
+
+.col1,
+.col2,
+.col3,
+.col4 {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7vw;
+}
+
+.subemail {
+    margin-top: 5px;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 5px;
+}
+
+.subcolumn {
+    background-color: rgb(0, 174, 255);
+    margin-top: 7px;
+    border-radius: 5px;
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    padding: 4px;
+    font-weight: bold;
+}
+
+.last {
+    padding: 4vw 13vw 2vw 13vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+}
+
+.twitter>img,
+.instagram>img,
+.github>img,
+.youtube>img,
+.reddit>img,
+.facebook>img,
+.linkedin>img {
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+}
+
+.copyright{
+    padding-left: 13vw;
+    padding-bottom: 4vw;
+    opacity: 0.7;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* My Reference */
+/* https://www.ultraedit.com/downloads/ultraedit-download-thank-you/ */
